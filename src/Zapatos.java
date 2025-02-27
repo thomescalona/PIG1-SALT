@@ -1,4 +1,4 @@
-package clasesProyecto;
+package com.iescamp.PROYECTO;
 
 public class Zapatos extends Accesorio {
     private int tallaZapatos;
