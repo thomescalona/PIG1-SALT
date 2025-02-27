@@ -2,6 +2,9 @@ package com.iescamp.PROYECTO;
 
 import java.util.Objects;
 
+import java.util.ArrayList;
+import java.util.Objects;
+
 public class Articulo {
     private String codigoArticulo;
     private String nombre;
@@ -9,17 +12,20 @@ public class Articulo {
     private String marca;
     private String descripcion;
     private String imagen;
+    private Material material;
     private boolean activo;
 
-    public Articulo(String codigoArticulo, String nombre,
-                    float precio, String marca, String descripcion,
-                    String imagen, boolean activo) {
+
+    private ArrayList<Articulo> articulos = new ArrayList<>();
+
+    public Articulo(String codigoArticulo, String nombre, float precio, String marca, String descripcion, String imagen, Material material, boolean activo) {
         this.codigoArticulo = codigoArticulo;
         this.nombre = nombre;
         this.precio = precio;
         this.marca = marca;
         this.descripcion = descripcion;
         this.imagen = imagen;
+        this.material = material;
         this.activo = activo;
     }
 
@@ -79,6 +85,14 @@ public class Articulo {
         this.activo = activo;
     }
 
+    public Material getMaterial() {
+        return material;
+    }
+
+    public void setMaterial(Material material) {
+        this.material = material;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
@@ -103,4 +117,64 @@ public class Articulo {
                 ", activo=" + activo +
                 '}';
     }
-}
+
+    // MWTODOSSSSSSSSSSS
+
+    public Articulo buscarPorCodigo(String codigo) {
+        for (Articulo a : articulos) {
+            if (a.getCodigoArticulo().equals(codigo)) {
+                return a;
+            }
+
+        }
+        System.out.println("Este articulo con este codigo no existe");
+        return null;
+    }
+
+    public Articulo filtrarPorArticulo (Articulo articulo){
+        for (Articulo a: articulos){
+            if (a instanceof Ropa){
+                System.out.println(a);
+                return  a;
+            } else if (a instanceof Accesorio) {
+                System.out.println(a);
+                return a;
+
+            } else {
+                System.out.println("Este articulo no existe");
+
+            }
+
+        }
+        return null;
+    }
+
+    public Articulo filtrarPorAritculo(Articulo articulo){
+        for (Articulo a: articulos){
+            if (a.activo){
+                return  a;
+            } else{
+                System.out.println("Articulo no activo");
+            }
+
+        }
+        return null;
+    }
+
+    // filtrar por material
+    public Articulo filtrarPorArticulo(Material material){
+        for (Articulo a: articulos){
+            if (a.material.equals(material)){
+                System.out.println(a);
+                return a;
+            } else {
+                System.out.println("Este articulo no tiene este material");
+            }
+
+        }
+        return null;
+    }
+
+
+
+    }
