@@ -1,4 +1,4 @@
-package clasesProyecto;
+package com.iescamp.PROYECTO;
 
 public class Pantalón extends Ropa {
 
