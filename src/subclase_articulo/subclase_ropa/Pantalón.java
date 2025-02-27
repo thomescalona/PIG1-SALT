@@ -21,13 +21,10 @@ public class Pantalón extends Ropa {
         this.tipoPantalon = tipoPantalon;
     }
 
-    public Pantalón(String codigoArticulo, String nombre, float precio, String marca, String descripcion, String imagen, boolean activo, int talla, String tipoCierre,
-                    String color, boolean tieneDisenyo, String tipoPantalon) {
-        super(codigoArticulo, nombre, precio, marca, descripcion, imagen, activo, talla, tipoCierre, color);
-        this.tieneBolsillo = tieneDisenyo;
+    public Pantalón(String codigoArticulo, String nombre, float precio, String marca, String descripcion, String imagen, Material material, boolean activo, int talla, String color, String tipoCierre, boolean tieneBolsillo, String tipoPantalon) {
+        super(codigoArticulo, nombre, precio, marca, descripcion, imagen, material, activo, talla, color, tipoCierre);
+        this.tieneBolsillo = tieneBolsillo;
         this.tipoPantalon = tipoPantalon;
-
-
     }
 
     @Override
