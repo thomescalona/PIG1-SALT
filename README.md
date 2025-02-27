@@ -1,5 +1,6 @@
     PROYECTO PARA APLICACION PARA SECOND HAND
-    ![Logo](.thomescalona/PIG1-SALT/blob/main/images/logo.png)
+    ![Logo](https://github.com/usuario/repositorio/raw/rama/ruta/a/la/imagen.png)
+
     
 
 ------------------------------------------------
