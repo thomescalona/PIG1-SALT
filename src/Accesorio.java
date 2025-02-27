@@ -1,4 +1,4 @@
-package clasesProyecto;
+package com.iescamp.PROYECTO;
 
 import java.util.Objects;
 
