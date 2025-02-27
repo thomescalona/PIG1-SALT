@@ -1,36 +1,42 @@
 package com.iescamp.PROYECTO;
 
-public class Chaqueta extends Ropa {
+public class Camisa extends Ropa {
 
-    private boolean impermeable;
+    private String tipoManga;
+    private boolean esEstampada;
 
-    public Chaqueta(String codigoArticulo, String nombre, float precio, String marca, String descripcion, String imagen, boolean activo, int talla, String tipoCierre, String color, boolean impermeable) {
-        super(codigoArticulo, nombre, precio, marca, descripcion, imagen, activo, talla, tipoCierre, color);
-        this.impermeable = impermeable;
+    public Camisa(String codigoArticulo, String nombre, float precio, String marca, String descripcion, String imagen, Material material, boolean activo, int talla, String color, String tipoCierre, String tipoManga, boolean esEstampada) {
+        super(codigoArticulo, nombre, precio, marca, descripcion, imagen, material, activo, talla, color, tipoCierre);
+        this.tipoManga = tipoManga;
+        this.esEstampada = esEstampada;
     }
 
-    public boolean isImpermeable() {
-        return impermeable;
+    public String getTipoManga() {
+        return tipoManga;
     }
 
-    public void setImpermeable(boolean impermeable) {
-        this.impermeable = impermeable;
+    public void setTipoManga(String tipoManga) {
+        this.tipoManga = tipoManga;
+    }
+
+    public boolean isEsEstampada() {
+        return esEstampada;
+    }
+
+    public void setEsEstampada(boolean esEstampada) {
+        this.esEstampada = esEstampada;
     }
 
     @Override
     public String toString() {
-        return "Chaqueta{" +
-                "impermeable=" + impermeable +
+        return "Camisa{" +
+                "tipoManga='" + tipoManga + '\'' +
+                ", esEstampada=" + esEstampada +
                 '}';
     }
 
     public void mostrarDetalles(){
-        if (impermeable){
-            System.out.println(getNombre() + " y soy impermeable");
-
-        }else {
-            System.out.println(getNombre() + " y no soy impermeable");
-        }
-
-    }
-}
+        if (esEstampada){
+            System.out.println(getNombre() + " tengo un tipo de manga "+ getTipoManga() +" y tengo un estampado");
+        } else {
+            System.out.println(getNombre() +  " tengo un tipo 
