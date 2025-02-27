@@ -4,9 +4,18 @@ import java.util.Objects;
 
 public class Ropa extends Articulo{
 
+
+
     private int talla;
     private String color;
     private String tipoCierre;
+
+    public Ropa(String codigoArticulo, String nombre, float precio, String marca, String descripcion, String imagen, Material material, boolean activo, int talla, String color, String tipoCierre) {
+        super(codigoArticulo, nombre, precio, marca, descripcion, imagen, material, activo);
+        this.talla = talla;
+        this.color = color;
+        this.tipoCierre = tipoCierre;
+    }
 
     public int getTalla() {
         return talla;
@@ -54,14 +63,5 @@ public class Ropa extends Articulo{
                 '}';
     }
 
-    public Ropa(String codigoArticulo, String nombre, float precio, String marca, String descripcion, String imagen,
-                boolean activo, int talla, String tipoCierre, String color) {
-        super(codigoArticulo, nombre, precio, marca, descripcion, imagen, activo);
-        this.talla = talla;
-        this.tipoCierre = tipoCierre;
-        this.color = color;
 
-
-
-    }
 }
