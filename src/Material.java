@@ -1,3 +1,4 @@
+package com.iescamp.PROYECTO;
 import java.util.Objects;
 
 public class Material {
