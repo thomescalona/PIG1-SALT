@@ -1,5 +1,5 @@
     PROYECTO PARA APLICACION PARA SECOND HAND
-    ![Image](https://github.com/user-attachments/assets/4f1b8953-8279-4fe3-b024-247489c89497)
+    ![Image](https://github.com/user-attachments/assets/207cfd40-cb5f-469f-ada2-bd8dbcfd9baf)
 
 ------------------------------------------------
 -    integrantes: Álvaro, Lei, Sara, Thomas
