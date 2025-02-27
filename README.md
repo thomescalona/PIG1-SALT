@@ -1,5 +1,6 @@
     PROYECTO PARA APLICACION PARA SECOND HAND
-    ![Logo](./images/logo.png)
+    ![Logo](.thomescalona/PIG1-SALT/blob/main/images/logo.png)
+    
 
 ------------------------------------------------
 -    integrantes: Álvaro, Lei, Sara, Thomas
