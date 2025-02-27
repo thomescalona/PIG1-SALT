@@ -1,42 +1,36 @@
 package com.iescamp.PROYECTO;
 
-public class Camisa extends Ropa {
+public class Chaqueta extends Ropa {
 
-    private String tipoManga;
-    private boolean esEstampada;
+    private boolean impermeable;
 
-    public Camisa(String codigoArticulo, String nombre, float precio, String marca, String descripcion, String imagen, Material material, boolean activo, int talla, String color, String tipoCierre, String tipoManga, boolean esEstampada) {
+    public Chaqueta(String codigoArticulo, String nombre, float precio, String marca, String descripcion, String imagen, Material material, boolean activo, int talla, String color, String tipoCierre, boolean impermeable) {
         super(codigoArticulo, nombre, precio, marca, descripcion, imagen, material, activo, talla, color, tipoCierre);
-        this.tipoManga = tipoManga;
-        this.esEstampada = esEstampada;
+        this.impermeable = impermeable;
     }
 
-    public String getTipoManga() {
-        return tipoManga;
+    public boolean isImpermeable() {
+        return impermeable;
     }
 
-    public void setTipoManga(String tipoManga) {
-        this.tipoManga = tipoManga;
-    }
-
-    public boolean isEsEstampada() {
-        return esEstampada;
-    }
-
-    public void setEsEstampada(boolean esEstampada) {
-        this.esEstampada = esEstampada;
+    public void setImpermeable(boolean impermeable) {
+        this.impermeable = impermeable;
     }
 
     @Override
     public String toString() {
-        return "Camisa{" +
-                "tipoManga='" + tipoManga + '\'' +
-                ", esEstampada=" + esEstampada +
+        return "Chaqueta{" +
+                "impermeable=" + impermeable +
                 '}';
     }
 
     public void mostrarDetalles(){
-        if (esEstampada){
-            System.out.println(getNombre() + " tengo un tipo de manga "+ getTipoManga() +" y tengo un estampado");
-        } else {
-            System.out.println(getNombre() +  " tengo un tipo 
+        if (impermeable){
+            System.out.println(getNombre() + " y soy impermeable");
+
+        }else {
+            System.out.println(getNombre() + " y no soy impermeable");
+        }
+
+    }
+}
