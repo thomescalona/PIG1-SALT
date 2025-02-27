@@ -22,13 +22,10 @@ public class Accesorio extends Articulo {
         this.esPersonalizado = esPersonalizado;
     }
 
-    public Accesorio(String codigoArticulo, String nombre, float precio, String marca, String descripcion, String imagen, boolean activo,
-                     String estilo, boolean esPersonalizado) {
-        super(codigoArticulo, nombre, precio, marca, descripcion, imagen, activo);
+    public Accesorio(String codigoArticulo, String nombre, float precio, String marca, String descripcion, String imagen, Material material, boolean activo, String estilo, boolean esPersonalizado) {
+        super(codigoArticulo, nombre, precio, marca, descripcion, imagen, material, activo);
         this.estilo = estilo;
         this.esPersonalizado = esPersonalizado;
-
-
     }
 
     @Override
