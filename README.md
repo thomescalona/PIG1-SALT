@@ -1,5 +1,5 @@
     PROYECTO PARA APLICACION PARA SECOND HAND
-    <img src="https://github.com/thomescalona/PIG1-SALT/raw/main/images/logo.png" alt="Logo" width="300">
+    ![Logo](https://cdn-icons-png.flaticon.com/512/10203/10203752.png)
 
 ------------------------------------------------
 -    integrantes: Álvaro, Lei, Sara, Thomas
