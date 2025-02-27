@@ -2,7 +2,7 @@ package com.iescamp.PROYECTO;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Cliente extends   Usuario{
+public class Cliente extends Usuario{
 
     private String direccionEnvio;
     private float saldoCuenta;
