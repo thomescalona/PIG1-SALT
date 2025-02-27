@@ -5,9 +5,8 @@ public class Camisa extends Ropa {
     private String tipoManga;
     private boolean esEstampada;
 
-    public Camisa(String codigoArticulo, String nombre, float precio, String marca, String descripcion, String imagen, boolean activo, int talla,
-                  String tipoCierre, String color, String tipoManga, boolean esEstampada) {
-        super(codigoArticulo, nombre, precio, marca, descripcion, imagen, activo, talla, tipoCierre, color);
+    public Camisa(String codigoArticulo, String nombre, float precio, String marca, String descripcion, String imagen, Material material, boolean activo, int talla, String color, String tipoCierre, String tipoManga, boolean esEstampada) {
+        super(codigoArticulo, nombre, precio, marca, descripcion, imagen, material, activo, talla, color, tipoCierre);
         this.tipoManga = tipoManga;
         this.esEstampada = esEstampada;
     }
@@ -40,8 +39,4 @@ public class Camisa extends Ropa {
         if (esEstampada){
             System.out.println(getNombre() + " tengo un tipo de manga "+ getTipoManga() +" y tengo un estampado");
         } else {
-            System.out.println(getNombre() +  " tengo un tipo de manga "+ getTipoManga()  + " y no tengo un estampado");
-        }
-
-    }
-}
+            System.out.println(getNombre() +  " tengo un tipo 
