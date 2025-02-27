@@ -1,7 +1,5 @@
     PROYECTO PARA APLICACION PARA SECOND HAND
-    ![Logo](https://github.com/usuario/repositorio/raw/rama/ruta/a/la/imagen.png)
-
-    
+    ![Logo](https://github.com/thomescalona/PIG1-SALT/raw/main/images/logo.png)
 
 ------------------------------------------------
 -    integrantes: Álvaro, Lei, Sara, Thomas
