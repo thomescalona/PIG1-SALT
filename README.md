@@ -1,5 +1,5 @@
     PROYECTO PARA APLICACION PARA SECOND HAND
-    ![Logo](![Logo](./images/logo.png)
+    ![Logo](./images/logo.png)
 
 ------------------------------------------------
 -    integrantes: Álvaro, Lei, Sara, Thomas
