@@ -54,6 +54,38 @@ public class Empleado extends Usuario{
         this.departamento = departamento;
     }
 
+  public Empleado buscarPorDNI(String dni){
+        for (Empleado e: empleados){
+            if (e.getDni().equals(dni)){
+                System.out.println("Usuario econtrado con el dni " + e);
+                return e;
+            }
+        }
+        return null;
+    }
+
+    public Empleado filtrarPorDepartamento(Departamento departamento){
+        for (Empleado e: empleados){
+            if (e.getDepartamento().equals(departamento)){
+                return e;
+            }
+        }
+        return null;
+    }
+
+    public Empleado filtrarPorNombreYApellidos(String nombre, String apellidos){
+        for (Empleado e: empleados){
+            if (e.getNombre().equals(nombre) && e.getApellidos().equals(apellidos)){
+                return e;
+            }
+        }
+        return null;
+    }
+
+    //filtrar por administradores
+
+
+
 
 
 
